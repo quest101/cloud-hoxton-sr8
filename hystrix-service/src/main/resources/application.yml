@@ -1,0 +1,15 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: hystrix-consumer
+eureka:
+  client:
+    service-url:
+      #注册地址
+      defaultZone: http://root:root@localhost:8082/eureka/
+  #显示服务器IP加端口
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
