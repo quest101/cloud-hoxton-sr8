@@ -1,0 +1,13 @@
+server:
+  port: 7001
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+          git:
+            uri: https://github.com/quest101/cloud-hoxton-sr8/
+            searchPaths: config-repo
+            username: 2006xikang101@163.com
+            password: zhengxk@123
