@@ -2,7 +2,7 @@ server:
   port: 9001
 spring:
   application:
-    name: feign-comsumer
+    name: feign-consumer
 eureka:
   client:
     service-url:
@@ -19,7 +19,6 @@ feign:
   hystrix:
     #在Feign中开启Hystrix
     enabled: true
-    #该配置是让Hystrix的超时时间改为5秒
   compression:
     request:
       #是否对请求进行GZIP压缩
@@ -30,8 +29,9 @@ feign:
       min-request-size: 2048
     response:
       enabled: false #是否对响应进行GZIP压缩
+#该配置是让Hystrix的超时时间改为5秒
 #hystrix:
-  #timeoutInMilliseconds: 5000
+#  timeoutInMilliseconds: 5000
 # 配置feign日志级别
 logging:
   level:
