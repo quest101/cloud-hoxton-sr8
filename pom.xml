@@ -13,6 +13,11 @@
         <module>ribbon-service</module>
         <module>hystrix-service</module>
         <module>feign-service</module>
+        <module>feign-consumer</module>
+        <module>hello-service-api</module>
+        <module>api-gateway</module>
+        <module>api-zuul</module>
+        <module>config-server</module>
     </modules>
 
     <parent>
