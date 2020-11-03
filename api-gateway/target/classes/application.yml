@@ -1,0 +1,41 @@
+server:
+  port: 8092
+spring:
+  application:
+    name: api-zuul
+eureka:
+  client:
+    service-url:
+      #注册地址
+      defaultZone: http://root:root@localhost:8082/eureka/
+  #显示服务器IP加端口
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+
+zuul:
+  #网关路由前缀
+  prefix: /
+  routes:
+    # 配置服务路由
+    user-service:
+      path: /userService/**
+    feign-service:
+      path: /feignService/**
+    feign-consumer:
+      path: /feignConsumer/**
+    ribbon-service:
+      path: /ribbon-service/**
+  #重定向添加host请求头
+  add-host-header: true
+  #配置过滤敏感的请求头信息，设置为空就不会过滤
+  sensitive-headers: Cookie,Set-Cookie,Authorization
+  #关闭默认路由配置，自动配置的路由以服务名称为匹配路径
+  ignored-services: user-service
+  # 关闭重试机制
+  retryable: true
+  LogFilter:
+    pre:
+      #控制是否禁用过滤器
+      disable: false
