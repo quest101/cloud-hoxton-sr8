@@ -13,6 +13,12 @@
 
     <dependencies>
 
+        <!-- 添加springboot bus amqp -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+        </dependency>
+
         <!-- SpringCloud Config -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -31,10 +37,10 @@
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
-        <!-- 添加springboot bus amqp -->
+        <!-- 添加springboot actuator -->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
     </dependencies>
