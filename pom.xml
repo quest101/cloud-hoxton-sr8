@@ -18,6 +18,8 @@
         <module>api-gateway</module>
         <module>api-zuul</module>
         <module>config-server</module>
+        <module>config-client</module>
+        <module>rabbitmq-hello</module>
     </modules>
 
     <parent>
