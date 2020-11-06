@@ -9,15 +9,15 @@ import org.springframework.core.env.Environment;
 
 @EnableConfigServer
 @SpringBootApplication
-public class ConfigApplication {
+public class ConfigServerApplication {
 
     private final static Logger logger =
-            LoggerFactory.getLogger(ConfigApplication.class);
+            LoggerFactory.getLogger(ConfigServerApplication.class);
 
     public static void main(String[] args) {
 
         Environment env =
-                SpringApplication.run(ConfigApplication.class,args).getEnvironment();
+                SpringApplication.run(ConfigServerApplication.class,args).getEnvironment();
         logger.info(
                 "\n----------------------------------------------------------\n\t"
                         + "Application '{}' is running! Access URLs:\n\t"
