@@ -1,4 +1,4 @@
-package com.ken.filters;
+package com.filters;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
@@ -10,7 +10,6 @@ import org.springframework.stereotype.Component;
 import javax.servlet.http.HttpServletRequest;
 
 @Component
-
 public class LogFilter extends ZuulFilter {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(LogFilter.class);

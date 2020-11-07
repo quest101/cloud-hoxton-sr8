@@ -36,6 +36,12 @@
             <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
         </dependency>
 
+        <!-- 添加 hystrix -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
+
     </dependencies>
     <build>
         <plugins>

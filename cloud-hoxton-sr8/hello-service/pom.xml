@@ -12,6 +12,13 @@
     <artifactId>hello-service</artifactId>
 
     <dependencies>
+        <!-- hello-service-api依赖 -->
+        <dependency>
+            <groupId>com.ken</groupId>
+            <artifactId>hello-service-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
         <!-- springboot web服务 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -30,6 +37,11 @@
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
     </dependencies>
     <build>
         <plugins>
@@ -38,6 +50,6 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-    </build>s
+    </build>
 
 </project>

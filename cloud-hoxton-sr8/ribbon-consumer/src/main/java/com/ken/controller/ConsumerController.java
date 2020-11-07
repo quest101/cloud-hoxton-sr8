@@ -1,5 +1,6 @@
 package com.ken.controller;
 
+import com.ken.service.HelloService;
 import com.ken.utils.RestTemplateUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,6 +26,9 @@ public class ConsumerController {
     @Autowired
     private RestTemplateUtils restTemplateUtils;
 
+    @Autowired
+    private HelloService helloService;
+
     private String userServiceUrl = "http://hello-service";
 
     @GetMapping("/hello")
@@ -35,5 +39,11 @@ public class ConsumerController {
                 HttpMethod.GET, null, null, null, Map.class);
         //return restTemplate.getForEntity(userServiceUrl+"/index",String.class).getBody();
 
+    }
+
+    @GetMapping("/ribbon-consumer")
+    public Map<String, Object> helloHystrixConsumer() {
+        logger.info("------------/helloHystrixConsumer-----------");
+        return helloService.helloConsumer();
     }
 }

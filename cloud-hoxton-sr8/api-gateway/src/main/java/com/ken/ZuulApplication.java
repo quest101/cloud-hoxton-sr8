@@ -1,11 +1,19 @@
 package com.ken;
 
+import com.filters.AccessFilter;
+import com.filters.LogFilter;
+import jdk.nashorn.internal.ir.annotations.Reference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
+import org.springframework.cloud.netflix.zuul.filters.ZuulProperties;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 
 /**
@@ -19,11 +27,11 @@ import org.springframework.core.env.Environment;
  */
 @EnableDiscoveryClient
 @SpringBootApplication
-public class ApiZuulApplication {
-    private final static Logger logger = LoggerFactory.getLogger(ApiZuulApplication.class);
+public class ZuulApplication {
+    private final static Logger logger = LoggerFactory.getLogger(ZuulApplication.class);
 
     public static void main(String[] args) {
-        Environment env = SpringApplication.run(ApiZuulApplication.class, args).getEnvironment();
+        Environment env = SpringApplication.run(ZuulApplication.class, args).getEnvironment();
         logger.info(
                 "\n----------------------------------------------------------\n\t"
                         + "Application '{}' is running! Access URLs:\n\t"
@@ -32,4 +40,20 @@ public class ApiZuulApplication {
                 env.getProperty("spring.application.name"), env.getProperty("server.port"),
                 env.getProperty("server.servlet.context-path") != null ? env.getProperty("server.servlet.context-path") : "");
     }
+
+    @Bean
+    public AccessFilter accessFilter(){
+        return new AccessFilter();
+    }
+
+    @Bean
+    public LogFilter logFilter(){
+        return new LogFilter();
+    }
+
+    /*@RefreshScope
+    @ConfigurationProperties("zuul")
+    public ZuulProperties zuulProperties(){
+        return new ZuulProperties();
+    }*/
 }
