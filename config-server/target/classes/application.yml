@@ -11,3 +11,11 @@ spring:
             searchPaths: 2.2.10/config-repo
             username: 2006xikang101@163.com
             password: zhengxk@123
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info
+    #显示健康具体信息  默认不会显示详细信息
+    #health:
+    #  show-details: always
