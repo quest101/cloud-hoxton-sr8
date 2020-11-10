@@ -1,8 +1,10 @@
 server:
   port: 9000
-spring:
-  application:
-    name: ribbon-consumer
+#spring:
+#  application:
+#    name: ribbon-consumer
+#  zipkin:
+#    base-url: http://localhost:9411/
 eureka:
   client:
     service-url:
@@ -13,3 +15,6 @@ eureka:
     hostname: localhost
     prefer-ip-address: true
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
+logging:
+  config:
+    classpath: logback-spring.xml

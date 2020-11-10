@@ -20,6 +20,8 @@
         <module>config-server</module>
         <module>config-client</module>
         <module>rabbitmq-hello</module>
+        <module>stream-demo</module>
+        <module>zipkin-server</module>
     </modules>
 
     <parent>
@@ -38,9 +40,9 @@
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud.version>Hoxton.SR8</spring-cloud.version>
+        <ch.qos.logback.version>1.1.7</ch.qos.logback.version>
     </properties>
 
-    <!-- https://spring.io/blog/2020/08/28/spring-cloud-hoxton-sr8-has-been-released -->
     <dependencyManagement>
         <dependencies>
             <dependency>

@@ -5,6 +5,7 @@ import com.netflix.discovery.DiscoveryClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -15,14 +16,17 @@ import java.util.logging.Logger;
 @RequestMapping("/api/ribbon")
 public class HelloController {
 
-    private final Logger logger = Logger.getLogger(String.valueOf(getClass()));
+    private final Logger logger =
+            Logger.getLogger(String.valueOf(getClass()));
 
     //@Autowired
     //private DiscoveryClient client;
 
     @GetMapping("/index")
-    public Map<String, Object> index(){
-        logger.info("=========hello============");
+    public Map<String, Object> index(HttpServletRequest requst){
+        logger.info("============<hello>,TraceId=,SpanId============");
+        logger.info(requst.getHeader("X-B3-TraceId"));
+        logger.info(requst.getHeader("X-B3-SpanId"));
         HashMap<String, Object> resultMap = new HashMap<>();
         resultMap.put("code", "200");
         resultMap.put("msg", "获取成功");
