@@ -11,8 +11,6 @@
 
     <artifactId>hello-service</artifactId>
 
-    <!--<dependencyManagement>-->
-
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -76,34 +74,31 @@
                 <artifactId>spring-cloud-starter-sleuth</artifactId>
             </dependency>
 
+            <!-- Spring Cloud Stream -->
+            <!--<dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-sleuth-stream</artifactId>
+            </dependency>-->
+
+            <!-- Spring Cloud Stream rabbit -->
+            <!--<dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-stream-rabbit</artifactId>
+            </dependency>-->
+
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
                 <version>1.7.7</version>
             </dependency>
 
-            <!--<dependency>
-                <groupId>ch.qos.logback</groupId>
-                <artifactId>logback-core</artifactId>
-                <version>${ch.qos.logback.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>ch.qos.logback</groupId>
-                <artifactId>logback-classic</artifactId>
-                <version>${ch.qos.logback.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>ch.qos.logback</groupId>
-                <artifactId>logback-access</artifactId>
-                <version>${ch.qos.logback.version}</version>
-            </dependency>-->
-
+            <!-- logstash -->
             <dependency>
                 <groupId>net.logstash.logback</groupId>
                 <artifactId>logstash-logback-encoder</artifactId>
                 <version>5.2</version>
             </dependency>
-            <!-- logback -->
+            <!-- logback start-->
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-core</artifactId>
@@ -124,15 +119,20 @@
                 <artifactId>commons-logging</artifactId>
                 <version>1.2</version>
             </dependency>
+            <!-- logback end -->
 
             <!-- zipkin -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-zipkin</artifactId>
             </dependency>
+            <!-- rabbit -->
+            <dependency>
+                <groupId>org.springframework.amqp</groupId>
+                <artifactId>spring-rabbit</artifactId>
+            </dependency>
 
         </dependencies>
-   <!-- </dependencyManagement>-->
 
     <build>
         <plugins>
