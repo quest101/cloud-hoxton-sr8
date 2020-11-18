@@ -74,9 +74,9 @@ public class HelloController {
     @GetMapping("/helloHystrix")
     public Map<String, Object> helloHystrix() throws Exception{
 
-        int sleepTime = new Random().nextInt(3000);
-        logger.info("sleepTime:"+sleepTime);
-        Thread.sleep(sleepTime);
+        //int sleepTime = new Random().nextInt(3000);
+        //logger.info("sleepTime:"+sleepTime);
+        //Thread.sleep(sleepTime);
 
         logger.info("/helloHystrix, host:");
         HashMap<String, Object> resultMap = new HashMap<>();

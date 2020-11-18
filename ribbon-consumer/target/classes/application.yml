@@ -1,5 +1,6 @@
 server:
   port: 9000
+#  port: 9002
 #spring:
 #  application:
 #    name: ribbon-consumer
@@ -15,6 +16,12 @@ eureka:
     hostname: localhost
     prefer-ip-address: true
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
+#暴露全部的监控信息
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
 logging:
   config:
     classpath: logback-spring.xml

@@ -1,0 +1,32 @@
+#设置服务端口
+server:
+  port: 2002
+#management:
+#    server:
+#      port: 9017
+spring:
+  application:
+    #服务名
+    name: turbine-amqp
+  #RabbitMQ相关配置
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: test
+    password: 123456
+eureka:
+  client:
+    service-url:
+      #指定服务注册中心的地址
+      defaultZone: http://root:root@localhost:8082/eureka/
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+turbine:
+  # 需要聚合的服务名称，多个服务使用逗号(,)分隔
+  app-config: ribbon-consumer
+  # 指定服务所属集群
+  cluster-name-expression: new String('default')
+  # 以主机名和端口号区分服务
+  combine-host-port: true

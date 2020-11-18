@@ -22,6 +22,10 @@
         <module>rabbitmq-hello</module>
         <module>stream-demo</module>
         <module>zipkin-server</module>
+        <module>hystrix-dashboard-demo</module>
+        <module>turbine-dashboard</module>
+        <module>turbine-amqp</module>
+        <module>hystrix-dashboard</module>
     </modules>
 
     <parent>
