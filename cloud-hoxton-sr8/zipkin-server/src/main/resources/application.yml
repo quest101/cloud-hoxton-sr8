@@ -1,0 +1,15 @@
+server:
+  port: 8085
+
+eureka:
+  client:
+    service-url:
+      #注册地址
+      defaultZone: http://root:root@localhost:8082/eureka/
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+logging:
+  config:
+    classpath: logback-spring.xml
