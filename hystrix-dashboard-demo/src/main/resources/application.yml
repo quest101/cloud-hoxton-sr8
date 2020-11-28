@@ -1,15 +1,18 @@
 server:
-  port: 9001
+  port: 2001
 spring:
   application:
-    name: hystrix-service
+    name: hystrix-dashboard-demo
 eureka:
   client:
     service-url:
       #注册地址
       defaultZone: http://root:root@localhost:8082/eureka/
-  #显示服务器IP加端口
   instance:
     hostname: localhost
     prefer-ip-address: true
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
+# is not in the allowed list of proxy host names.  If it should be allowed add it to hystrix.dashboard.proxyStreamAllowList.
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "localhost"
