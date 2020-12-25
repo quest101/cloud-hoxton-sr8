@@ -1,0 +1,19 @@
+server:
+  port: 9002
+spring:
+  redis:
+    database: 12
+    port: 6379
+    host: 127.0.0.1
+    pool:
+      max-idle: 8
+      min-idle: 0
+      max-active: 8
+      max-wait: -1
+  application:
+    name: sso-client2
+sso:
+  server:
+    url: http://peer3:9003
+  client:
+    protect: /hello

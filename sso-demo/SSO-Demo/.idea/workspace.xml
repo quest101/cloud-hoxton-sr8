@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b4d6a29b-7bbf-47fd-a1e2-3c44127d24f9" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="XHTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
+        <option name="mavenHome" value="$USER_HOME$/Downloads/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="$USER_HOME$/Downloads/apache-maven-3.6.3/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="importAutomatically" value="true" />
+        <option name="jdkForImporter" value="#JAVA_HOME" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_HOME" />
+  </component>
+  <component name="ProjectId" id="1m75Dj0hAdfLOWh6o7vQTmUWiaR" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="XHTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sso-server/src/main/resources/templates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SSOClientApplication">
+    <configuration name="SSOApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="sso-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kang.sso.server.SSOServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SSOClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="sso-client1" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kang.client.SSOClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b4d6a29b-7bbf-47fd-a1e2-3c44127d24f9" name="Default Changelist" comment="" />
+      <created>1608831670376</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608831670376</updated>
+      <workItem from="1608831673477" duration="1548000" />
+      <workItem from="1608885203343" duration="16877000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="304" y="103" key="#Project_Structure" timestamp="1608839016664">
+      <screen x="0" y="23" width="1440" height="831" />
+    </state>
+    <state x="304" y="103" key="#Project_Structure/0.23.1440.831@0.23.1440.831" timestamp="1608839016664" />
+    <state x="517" y="154" key="#com.intellij.ide.util.MemberChooser" timestamp="1608914256514">
+      <screen x="0" y="23" width="1440" height="831" />
+    </state>
+    <state x="517" y="154" key="#com.intellij.ide.util.MemberChooser/0.23.1440.831@0.23.1440.831" timestamp="1608914256513" />
+    <state x="248" y="370" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1608904291783">
+      <screen x="0" y="23" width="1440" height="831" />
+    </state>
+    <state x="248" y="370" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1440.831@0.23.1440.831" timestamp="1608904291783" />
+    <state x="381" y="270" key="com.intellij.ide.util.TipDialog" timestamp="1608885247612">
+      <screen x="0" y="23" width="1440" height="831" />
+    </state>
+    <state x="381" y="270" key="com.intellij.ide.util.TipDialog/0.23.1440.831@0.23.1440.831" timestamp="1608885247612" />
+    <state x="167" y="126" key="new project wizard" timestamp="1608902474950">
+      <screen x="0" y="23" width="1440" height="831" />
+    </state>
+    <state x="167" y="126" key="new project wizard/0.23.1440.831@0.23.1440.831" timestamp="1608902474950" />
+  </component>
+</project>
