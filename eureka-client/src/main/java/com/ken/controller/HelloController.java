@@ -19,7 +19,6 @@ public class HelloController {
 
     @RequestMapping(value="hello",method= RequestMethod.GET)
     public String index(){
-        //ServiceInstance instance = client.get
         return "Hello World";
     }
 
